@@ -43,3 +43,16 @@ if (tabButtons) {
  - [Rabitz](https://setka-rabitsa.by/)
 
  ---
+
+ ## Education & Courses
+ - Belarusian Government Pedagogical University
+ - From0to1 'Html & Css & JS' course 
+ - Udemy: IT-Doctor 'Html & Css & JS' course 
+ - Udemy: PurpleSchool 'JavaScript' courses
+ - YouTube courses
+ ---
+ ## Languages
+ - __Russian__ - native speaker
+ - __English__ - A2
+ - __Polish__ - B1
+
