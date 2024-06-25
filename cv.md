@@ -21,7 +21,9 @@ Hello. I'm learning web development. I create custom websites and actively study
  - __JavaScript__
 
  ---
+ 
  ## Code Examples
+
  ```
 const tabButtons = document.querySelectorAll('[data-tab]');
 const contentBoxes = document.querySelectorAll('[data-tab-content]');
@@ -38,6 +40,7 @@ if (tabButtons) {
 } 
  ```
  ---
+
  ## Links to some of my projects that are not on GIT
  - [Beauty salon](https://vsalonbeauty.pl/index.html)
  - [Rabitz](https://setka-rabitsa.by/)
@@ -51,6 +54,7 @@ if (tabButtons) {
  - Udemy: PurpleSchool 'JavaScript' courses
  - YouTube courses
  ---
+
  ## Languages
  - __Russian__ - native speaker
  - __English__ - A2
