@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
 ul[class],
 ol[class] {
   padding: 0;
@@ -18,4 +24,21 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/OpenSansRegular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/OpenSansMedium.ttf");
+  font-weight: 500;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
 }
