@@ -79,7 +79,7 @@ body {
 .title {
   font-size: 22px;
 }
-
+/* Header */
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -198,6 +198,7 @@ body {
 .main-inner__right-column {
   width: 70%;
 }
+/* Contacts */
 .contacts {
   margin-bottom: 40px;
 }
@@ -232,6 +233,7 @@ body {
 .contacts-list__item--git::after {
   background-image: url('assets/svg/github.svg');
 }
+/* Skills */
 .skills {
   margin-bottom: 40px;
 }
@@ -275,6 +277,7 @@ body {
 .skills-list__item--photoshop::after {
   background-image: url('assets/svg/photoshop.svg');
 }
+/* Language */
 .language {
   margin-bottom: 40px;
 }
@@ -298,6 +301,7 @@ body {
   top: 7px;
   left: 13px;
 }
+/* About */
 .about {
   padding: 20px 30px;
 }
@@ -321,6 +325,7 @@ body {
   font-size: 20px;
   line-height: 1.3;
 }
+/* Education */
 .education {
   padding: 20px 30px;
   background-color: #ccc;
@@ -349,6 +354,7 @@ body {
   font-weight: 500;
   text-decoration: underline;
 }
+/* Courses */
 .courses {
   padding: 20px 30px;
 }
@@ -375,6 +381,7 @@ body {
   font-size: 22px;
   font-weight: 500;
 }
+/* Code-example */
 .code-example {
   padding: 20px 30px;
   background-color: #ccc;
@@ -413,6 +420,7 @@ body {
 .code-example__span-const--name {
   color: #c58e2a;
 }
+/* Project */
 .project {
   padding: 20px 30px;
 }
@@ -446,7 +454,7 @@ body {
   text-align: center;
   padding: 20px;
 }
-
+/* Footer */
 .footer {
   background-color: #c1daf3;
   padding: 0 50px;
