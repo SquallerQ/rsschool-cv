@@ -51,6 +51,7 @@ img {
 }
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
@@ -293,21 +294,154 @@ body {
   top: 7px;
   left: 13px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.about {
+  padding: 20px 30px;
+}
+.about__title {
+  margin-bottom: 25px;
+  text-align: right;
+  position: relative;
+  font-size: 32px;
+}
+.about__title::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 70px;
+  height: 3px;
+  bottom: -5px;
+  right: 0px;
+}
+.about__text {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.education {
+  padding: 20px 30px;
+  background-color: #ccc;
+}
+.education__title {
+  margin-bottom: 25px;
+  text-align: right;
+  position: relative;
+  font-size: 32px;
+}
+.education__title::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 70px;
+  height: 3px;
+  bottom: -5px;
+  right: 0px;
+}
+.education__text {
+  margin-bottom: 10px;
+  font-size: 18px;  
+}
+.education__text span{
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.courses {
+  padding: 20px 30px;
+}
+.courses__title {
+  margin-bottom: 25px;
+  text-align: right;
+  position: relative;
+  font-size: 32px;
+}
+.courses__title::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 70px;
+  height: 3px;
+  bottom: -5px;
+  right: 0px;
+}
+.courses__text {
+  margin-bottom: 10px;
+  font-size: 18px;  
+}
+.courses__text span{
+  font-size: 22px;
+  font-weight: 500;
+}
+.code-example {
+  padding: 20px 30px;
+  background-color: #ccc;
+}
+.code-example__title {
+  margin-bottom: 25px;
+  text-align: right;
+  position: relative;
+  font-size: 32px;
+}
+.code-example__title::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 70px;
+  height: 3px;
+  bottom: -5px;
+  right: 0px;
+}
+.code-example__pre {
+  margin: 0;
+  display: flex;
+  align-self: center;
+  width: 100%;
+}
+.code-example__code {
+  color: #fff;
+  width: 100%;
+  line-height: 22px;
+  padding: 0;
+  background-color: #202026;
+}
+.code-example__span-const {
+  color: #bb3bbb;
+}
+.code-example__span-const--name {
+  color: #c58e2a;
+}
+.project {
+  padding: 20px 30px;
+}
+.project__title {
+  margin-bottom: 25px;
+  text-align: right;
+  position: relative;
+  font-size: 32px;
+}
+.project__title::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 70px;
+  height: 3px;
+  bottom: -5px;
+  right: 0px;
+}
+.project-inner {
+  display: flex;
+  justify-content: space-around;
+}
+.project-inner__item {
+  width: 100%;
+  padding: 0 10px;
+}
+.project-inner__image {
+  height: 130px;
+}
+.project-inner__git {
+  text-align: center;
+  padding: 20px;
+}
 
 .footer {
   background-color: #c1daf3;

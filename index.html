@@ -22,16 +22,16 @@
           <nav class="header-content__menu">
             <ul class="header-content__menu-list">
               <li class="header-content__menu-item">
-                <a href="#" class="header-content__menu-link">About Me</a>
+                <a href="#about" class="header-content__menu-link">About Me</a>
               </li>
               <li class="header-content__menu-item">
-                <a href="#" class="header-content__menu-link">Code</a>
+                <a href="#courses" class="header-content__menu-link">Courses</a>
               </li>
               <li class="header-content__menu-item">
-                <a href="#" class="header-content__menu-link">Projects</a>
+                <a href="#code" class="header-content__menu-link">Code</a>
               </li>
               <li class="header-content__menu-item">
-                <a href="#" class="header-content__menu-link">Skills</a>
+                <a href="#project" class="header-content__menu-link">Projects</a>
               </li>
             </ul>
           </nav>
@@ -90,7 +90,70 @@
           </section>
         </div>
 
-        <div class="main-inner__right-column"></div>
+        <div class="main-inner__right-column">
+          <section class="about" id="about">
+            <h2 class="title about__title">About Me</h2>
+            <p class="about__text">Hello. I'm learning web development. I create custom websites and actively study JS.
+              Previously worked with CCTV
+              cameras, set up remote connections and created networks.</p>
+
+            <p class="about__text">At the university I studied history and social sciences; in my free time I like to
+              read books or listen to music.</p>
+            <p class="about__text">I currently live in Warsaw.</p>
+          </section>
+          <section class="education">
+            <h2 class="title education__title">Education</h2>
+            <p class="education__text"><span>University:</span> Belarusian State University</p>
+            <p class="education__text"><span>Speciality:</span> History and social sciences</p>
+            <p class="education__text"><span>Years:</span> 2012 - 2016</p>
+          </section>
+          <section class="courses" id="courses">
+            <h2 class="title courses__title">Courses</h2>
+            <p class="courses__text"><span>From0to1:</span> 'Html & Css & JS' course</p>
+            <p class="courses__text"><span>Udemy. IT-Doctor:</span> 'Html & Css & JS' course</p>
+            <p class="courses__text"><span>Udemy. PurpleSchool:</span> 'JavaScript' courses</p>
+            <p class="courses__text"><span>YouTube courses</span></p>
+          </section>
+          <section class="code-example" id="code">
+            <h2 class="title code-example__title">Code Example</h2>
+            <pre class="code-example__pre">
+              <code class="code-example__code">
+          <span class="code-example__span-const">const</span> <span class="code-example__span-const--name">tabButtons</span> = document.querySelectorAll('[data-tab]');
+          <span class="code-example__span-const">const</span> <span class="code-example__span-const--name">contentBoxes</span> = document.querySelectorAll('[data-tab-content]');
+          if (<span class="code-example__span-const--name">tabButtons</span>) {
+          <span class="code-example__span-const--name">tabButtons</span>.forEach(function(item) {
+              item.addEventListener('click', function(){
+          <span class="code-example__span-const--name">contentBoxes</span>.forEach(function(item) {
+              item.classList.add('hidden');
+          });
+          <span class="code-example__span-const">const</span> <span class="code-example__span-const--name">contentBox</span> = document.querySelector('#' + this.dataset.tab);
+          <span class="code-example__span-const--name">contentBox</span>.classList.remove('hidden');
+          })
+          });
+          }
+              </code>
+            </pre>
+          </section>
+          <section class="project">
+            <h2 class="title project__title" id="project">My projects</h2>
+            <div class="project-inner">
+              <div class="project-inner__item">
+                <a class="project-inner__link" href="https://vsalonbeauty.pl/index.html" target="_blank">
+                  <img class="project-inner__image" src="assets/img/project2.png" alt="project img">
+                </a>
+              </div>
+              <div class="project-inner__item">
+                <a class="project-inner__link" href="https://squallerq.github.io/Meble./" target="_blank">
+                  <img class="project-inner__image" src="assets/img/project1.png" alt="project img">
+                </a>
+              </div>
+            </div>
+            <p class="project-inner__git">
+              <a class="project-inner__git-link" href="https://github.com/SquallerQ/rsschool-cv" target="_blank">RS-School Project</a>
+            </p>
+
+          </section>
+        </div>
       </div>
 
     </div>
