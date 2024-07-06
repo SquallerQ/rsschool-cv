@@ -58,10 +58,8 @@ body {
 
   display: flex;
   flex-direction: column;
-
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-
 }
 .main {
   flex-grow: 1;
@@ -72,6 +70,9 @@ body {
   margin: 0 auto;
 }
 .burger-button {
+  display: none;
+}
+.header-content-name {
   display: none;
 }
 
@@ -400,7 +401,7 @@ body {
   width: 100%;
 }
 .code-example__code {
-  color: #fff;
+  color: #ffffff;
   width: 100%;
   line-height: 22px;
   padding: 0;
@@ -471,7 +472,7 @@ body {
   height: 70px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .burger-button {
     display: flex;
     justify-content: center;
@@ -484,7 +485,7 @@ body {
     span {
       width: 100%;
       height: 3px;
-      background-color: #fff;
+      background-color: #ffffff;
     }
     span::before {
       content: '';
@@ -493,7 +494,7 @@ body {
       height: 3px;
       left: 0;
       top: 5px;
-      background-color: #fff;
+      background-color: #ffffff;
     }
     span::after {
       content: '';
@@ -502,11 +503,11 @@ body {
       height: 3px;
       left: 0;
       bottom: 5px;
-      background-color: #fff;
+      background-color: #ffffff;
     }
   }
   .header-content__menu-list {
-    transform: translateY(-200%);
+    transform: translateY(-300%);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -542,5 +543,77 @@ body {
     align-items: center;
     width: 100%;
     font-size: 40px;
+  }
+  .header-content-name {
+    display: block;
+    font-size: 23px;
+  }
+  .header-inner {
+    display: block;
+  }
+  .header-photo {
+    display: none;
+  }
+  .header-content {
+    width: 100%;
+  }
+  .header-content__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .header-content__about-name {
+    display: none;
+  }
+  .header-content__about-dev {
+    display: none;
+  }
+  .header-content::after {
+    display: none;
+  }
+  .header-content::before {
+    display: none;
+  }
+  .main-inner {
+    display: block;
+    padding: 0 30px;
+    
+  }
+  .main-inner__left-column {
+    width: 100%;
+  }
+  .main-inner__right-column {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .code-example {
+    display: none;
+  }
+  .project-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .project-inner__item {
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  .about__title,
+  .education__title,
+  .courses__title,
+  .project__title {
+    text-align: left;
+  }
+  .about__title::after,
+  .education__title::after,
+  .courses__title::after,
+  .project__title::after {
+    display: none;
+  }
+  .header-content-name {
+    font-size: 18px;
   }
 }
