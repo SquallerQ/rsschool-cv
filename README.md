@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Squallerq.github.io/rsschool-cv/

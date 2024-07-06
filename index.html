@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico">
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+
+        <div class="header-photo">
+          <img class="header__photo" src="assets/img/photo.jpg" alt="main photo">
+        </div>
+        <div class="header-content">
+          <nav class="header-content__menu">
+            <p class="header-content-name">Eugeniy Patapchuk</p>
+            <ul class="header-content__menu-list">
+              <li class="header-content__menu-item">
+                <a href="#about" class="header-content__menu-link">About Me</a>
+              </li>
+              <li class="header-content__menu-item">
+                <a href="#courses" class="header-content__menu-link">Courses</a>
+              </li>
+              <li class="header-content__menu-item">
+                <a href="#code" class="header-content__menu-link">Code</a>
+              </li>
+              <li class="header-content__menu-item">
+                <a href="#project" class="header-content__menu-link">Projects</a>
+              </li>
+
+
+            </ul>
+            <div class="burger-button">
+              <span></span>
+            </div>
+          </nav>
+
+          <div class="header-content__about">
+
+            <h1 class="header-content__about-dev">Web Developer</h1>
+            <p class="header-content__about-name">
+              <a class="header-content__about-link" href="https://t.me/SquallerQ" target="_blank">Patapchuk Eugeniy</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main-inner">
+
+        <div class="main-inner__left-column">
+          <section class="contacts">
+            <h3 class="title contacts-title">Contacts</h3>
+            <ul class="contacts-list">
+              <li class="contacts-list__item contacts-list__item--location">Warsaw, Poland</li>
+              <li class="contacts-list__item contacts-list__item--mail">John199502031@gmail.com</li>
+              <li class="contacts-list__item contacts-list__item--number">+48 793 236 023</li>
+              <li class="contacts-list__item contacts-list__item--git"><a href="https://github.com/SquallerQ"
+                  target="_blank">GitHub</a></li>
+            </ul>
+
+          </section>
+          <section class="skills">
+            <h3 class="title skills-title">Skills</h3>
+
+            <ul class="skills-list">
+              <li class="skills-list__item skills-list__item--html">HTML</li>
+              <li class="skills-list__item skills-list__item--css">CSS</li>
+              <li class="skills-list__item skills-list__item--gulp">Gulp</li>
+              <li class="skills-list__item skills-list__item--js">JavaScript</li>
+              <li class="skills-list__item skills-list__item--git">GitHub</li>
+              <li class="skills-list__item skills-list__item--figma">Figma</li>
+              <li class="skills-list__item skills-list__item--photoshop">Adobe Photoshop</li>
+            </ul>
+
+          </section>
+          <section class="language">
+            <h3 class="title language-title">Languages</h3>
+
+            <ul class="language-list">
+              <li class="language-list__item">Russian - Native</li>
+              <li class="language-list__item">Polish - Upper-Intermediate</li>
+              <li class="language-list__item">English - Elementary</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="main-inner__right-column">
+          <section class="about" id="about">
+            <h2 class="title about__title">About Me</h2>
+            <p class="about__text">Hello. I'm learning web development. I create custom websites and actively study JS.
+              Previously worked with CCTV
+              cameras, set up remote connections and created networks.</p>
+
+            <p class="about__text">At the university I studied history and social sciences; in my free time I like to
+              read books or listen to music.</p>
+            <p class="about__text">I currently live in Warsaw.</p>
+          </section>
+          <section class="education">
+            <h2 class="title education__title">Education</h2>
+            <p class="education__text"><span>University:</span> Belarusian State University</p>
+            <p class="education__text"><span>Speciality:</span> History and social sciences</p>
+            <p class="education__text"><span>Years:</span> 2012 - 2016</p>
+          </section>
+          <section class="courses" id="courses">
+            <h2 class="title courses__title">Courses</h2>
+            <p class="courses__text"><span>From0to1:</span> 'Html & Css & JS' course</p>
+            <p class="courses__text"><span>Udemy. IT-Doctor:</span> 'Html & Css & JS' course</p>
+            <p class="courses__text"><span>Udemy. PurpleSchool:</span> 'JavaScript' courses</p>
+            <p class="courses__text"><span>YouTube courses</span></p>
+          </section>
+          <section class="code-example" id="code">
+            <h2 class="title code-example__title">Code Example</h2>
+            <pre class="code-example__pre">
+              <code class="code-example__code">
+          <span class="code-example__span-const">const</span> <span class="code-example__span-const--name">tabButtons</span> = document.querySelectorAll('[data-tab]');
+          <span class="code-example__span-const">const</span> <span class="code-example__span-const--name">contentBoxes</span> = document.querySelectorAll('[data-tab-content]');
+          if (<span class="code-example__span-const--name">tabButtons</span>) {
+          <span class="code-example__span-const--name">tabButtons</span>.forEach(function(item) {
+              item.addEventListener('click', function(){
+          <span class="code-example__span-const--name">contentBoxes</span>.forEach(function(item) {
+              item.classList.add('hidden');
+          });
+          <span class="code-example__span-const">const</span> <span class="code-example__span-const--name">contentBox</span> = document.querySelector('#' + this.dataset.tab);
+          <span class="code-example__span-const--name">contentBox</span>.classList.remove('hidden');
+          })
+          });
+          }
+              </code>
+            </pre>
+          </section>
+          <section class="project">
+            <h2 class="title project__title" id="project">My projects</h2>
+            <div class="project-inner">
+              <div class="project-inner__item">
+                <a class="project-inner__link" href="https://vsalonbeauty.pl/index.html" target="_blank">
+                  <img class="project-inner__image" src="assets/img/project2.png" alt="project img">
+                </a>
+              </div>
+              <div class="project-inner__item">
+                <a class="project-inner__link" href="https://squallerq.github.io/Meble./" target="_blank">
+                  <img class="project-inner__image" src="assets/img/project1.png" alt="project img">
+                </a>
+              </div>
+            </div>
+            <p class="project-inner__git">
+              <a class="project-inner__git-link" href="https://github.com/SquallerQ/rsschool-cv"
+                target="_blank">RS-School Project</a>
+            </p>
+
+          </section>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-inner__github-logo">
+          <a class="footer-inner__github-link" href="https://github.com/SquallerQ" target="_blank">
+            <img class="footer-inner__github-img" src="assets/svg/github.svg" alt="github img">
+          </a>
+        </div>
+        <div class="footer-inner__information">
+          <p>Created in 2024</p>
+          <a class="footer-inner__information-link" href="https://rs.school/courses/javascript-ru" target="_blank">
+            <img class="footer-inner__information-img" src="assets/svg/rs-school-logo.svg" alt="rs-school img">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
