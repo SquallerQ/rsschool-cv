@@ -31,6 +31,7 @@ dd {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 img {
@@ -66,10 +67,12 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1024px;
   margin: 0 auto;
 }
-
+.title {
+  font-size: 22px;
+}
 .header {
   background-color: aliceblue;
 }
@@ -77,16 +80,13 @@ body {
 .header-inner {
   display: flex;
   justify-content: space-between;
-  padding: 0 200px ;
 }
 .header-photo {
   width: 28%;
   height: 50%;
 }
 .header__photo {
-
   border: 10px solid #32464e;
-
 }
 .header-content {
   display: flex;
@@ -113,7 +113,6 @@ body {
   height: 170px;
   top: 162px;
   left: 12px;
-  
 }
 .header-content__menu {
   display: flex;
@@ -136,8 +135,8 @@ body {
   color: #000;
 }
 .header-content__about {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .header-content__about-dev {
   width: 70%;
@@ -183,6 +182,124 @@ body {
 .header-content__about-link {
   color: #000;
 }
+
+.main-inner {
+  display: flex;
+  margin-top: 20px;
+}
+.main-inner__left-column {
+  width: 30%;
+}
+.main-inner__right-column {
+  width: 70%;
+}
+.contacts {
+  margin-bottom: 40px;
+}
+.contacts-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.contacts-list__item {
+  margin-bottom: 17px;
+  padding-left: 50px;
+  position: relative;
+}
+.contacts-list__item::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  top: -5px;
+  left: 3px;
+}
+.contacts-list__item--location::after {
+  background-image: url('assets/svg/location.svg');
+}
+.contacts-list__item--mail::after {
+  background-image: url('assets/svg/mail.svg');
+}
+.contacts-list__item--number::after {
+  background-image: url('assets/svg/phone.svg');
+}
+.contacts-list__item--git::after {
+  background-image: url('assets/svg/github.svg');
+}
+.skills {
+  margin-bottom: 40px;
+}
+.skills-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.skills-list__item {
+  margin-bottom: 17px;
+  padding-left: 50px;
+  position: relative;
+}
+.skills-list__item::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  top: -5px;
+  left: 3px;
+}
+.skills-list__item--html::after {
+  background-image: url('assets/svg/html.svg');
+}
+.skills-list__item--css::after {
+  background-image: url('assets/svg/css.svg');
+}
+.skills-list__item--gulp::after {
+  background-image: url('assets/svg/gulp.svg');
+}
+.skills-list__item--js::after {
+  background-image: url('assets/svg/js.svg');
+}
+.skills-list__item--git::after {
+  background-image: url('assets/svg/github.svg');
+}
+.skills-list__item--figma::after {
+  background-image: url('assets/svg/figma.svg');
+}
+.skills-list__item--photoshop::after {
+  background-image: url('assets/svg/photoshop.svg');
+}
+.language {
+  margin-bottom: 40px;
+}
+.language-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.language-list__item {
+  margin-bottom: 17px;
+  padding-left: 50px;
+  position: relative;
+}
+.language-list__item::after {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  top: 7px;
+  left: 13px;
+}
+
+
+
+
+
+
+
 
 
 
